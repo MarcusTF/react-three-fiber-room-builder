@@ -1,0 +1,29 @@
+#root {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 16px;
+    line-height: 0px;
+}
+header h1 {
+    padding-top: 3px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}

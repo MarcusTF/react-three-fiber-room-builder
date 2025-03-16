@@ -1,0 +1,133 @@
+.cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 16px;
+    height: 100%;
+    background: #f7f7f7;
+    padding: 16px;
+    overflow: hidden;
+    width: 350px;
+}
+
+.cart h2 {
+    font-weight: 500;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+.cart ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    grid-gap: 16px;
+    overflow-y: auto;
+}
+
+.cart ul li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    grid-gap: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.cart ul li .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart ul li .left img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.cart ul li .left button {
+    --radar-gray1: #f6fafc;
+    --radar-gray2: #eaf1f6;
+    --radar-gray3: #dbe5eb;
+    --radar-gray5: #acbdc8;
+    --radar-gray6: #5a6872;
+    --radar-gray8: #051723;
+    --radar-sapphire: #0005fb;
+    --radar-midnight: #000257;
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    --scroll-y: 0px;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #0053a0;
+    text-decoration: underline;
+    font-size: 0.875rem;
+    line-height: 18.48px;
+}
+
+.cart ul li .right {
+}
+
+.cart ul li .right h3 {
+    letter-spacing: 0.01071em;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    line-height: 18.48px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.cart ul li .right p {
+    display: flex;
+    color: #333;
+    box-sizing: inherit;
+    border: 0;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-weight: 700;
+    font-size: 27px;
+    margin-right: 0 !important;
+    font-family:
+        RTG Gilroy,
+        sans-serif !important;
+}
+
+.cart ul li .right p .currency {
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.cart .cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.cart .cart-total h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.cart .cart-total p {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.cart .cart-total p .currency {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 3px;
+}

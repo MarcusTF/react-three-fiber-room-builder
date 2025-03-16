@@ -1,0 +1,125 @@
+.furniture-explorer.open {
+    width: 282px;
+    padding: 16px;
+}
+.furniture-explorer {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    position: relative;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-areas:
+        "header"
+        "options";
+    overflow: hidden;
+    grid-gap: 16px;
+    padding: 16px 0;
+    border-right: 1px solid #e5e5e5;
+    transition:
+        width 0.3s ease-in-out,
+        padding 0.3s ease-in-out;
+}
+
+.furniture-explorer h2 {
+    color: rgb(0, 53, 102);
+    grid-area: header;
+}
+
+.furniture-explorer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    /* overflow-x: visible; */
+    gap: 25px;
+    padding: 0 10px;
+}
+
+.furniture-explorer li {
+    font-weight: 600;
+}
+
+.furniture-list {
+    grid-area: options;
+}
+.furniture-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+}
+.furniture-list li p {
+    font-weight: 600;
+}
+.furniture-list li p.name {
+    padding-top: 8px;
+    line-height: 100%;
+    font-size: 16px;
+}
+.furniture-list li p.price {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.furniture-list li .currency-symbol {
+    font-size: 12px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.furniture-list .furniture-image-container {
+    width: 100%;
+    height: 150px;
+    background-color: #ebebeb;
+}
+
+.furniture-list img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.furniture-list button {
+    outline: 0;
+    border: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #0053a0;
+    box-shadow:
+        0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.furniture-explorer .close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    overflow: visible;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.12);
+    z-index: 100;
+}

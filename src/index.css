@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "RTG Gilroy";
+    src:
+        url("./assets/font/RTG-Gilroy-Regular.woff") format("woff"),
+        url("./assets/font/RTG-Gilroy-Regular.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RTG Gilroy";
+    src: url("./assets/font/RTG-Gilroy-Light.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RTG Gilroy";
+    src: url("./assets/font/RTG-Gilroy-Medium.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RTG Gilroy";
+    src: url("./assets/font/RTG-Gilroy-SemiBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RTG Gilroy";
+    src: url("./assets/font/RTG-Gilroy-Bold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+:root {
+    font-style: normal;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+* {
+    font-family:
+        RTG Gilroy,
+        Avenir,
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+:root,
+html,
+body,
+#root {
+    height: 100%;
+}
